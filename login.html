@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+
+<body>
+
+
+
+
+    <!-- form starts here -->
+    <div class="maindiv">
+        <div class="container">
+            <form name="submit-to-google-sheet" class="glass-login-form" action="./index.html" method="POST">
+                <h2>Login Here</h2>
+                <div class="input-group">
+                    <label for="">Name : </label>
+                    <input type="text" name="name" required id=""><br>
+                </div>
+                <div class="input-group">
+                    <label for="">Email : </label>
+                    <input type="email" name="email" required><br>
+                </div>
+                
+                <input type="submit" name="submit" class="button" value="Enter"   ><br>
+                <span id="success"></span>
+            </form>
+            <script>
+                     
+                function myFunction3() {
+                 var name=document.getElementById('name');
+                 var email=document.getElementById('email');
+                 
+                 location.replace("./index.html");
+                
+
+                  
+                  
+                }
+                </script>
+                
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwKhvUsOw2SxK7WlRyca6XvubO7jRbmjfGL-rD-SPXQRYmOfa8o56DAo3_Z7LOJXAhOug/exec'
+                const success = document.getElementById('success');
+                const form = document.forms['submit-to-google-sheet']
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            success.innerHTML = "data successfully submit";
+                            setTimeout(function () {
+                                success.innerHTML = "";
+                            }, 200)
+                            form.reset();
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

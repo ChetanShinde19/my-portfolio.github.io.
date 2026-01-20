@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jotiba Temple</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="./jotiba_temple.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <!-- <li><a href="#">Login</a></li> -->
+        </ul>
+        <ul>
+            <li><a href="#">
+                    <h2 class="">EXPLORE_KOLHAPUR</h2>
+                </a></li>
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./About.html">About</a></li>
+            <li class="hideOnMobile"><a href="./contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="./Services.html">Services</a></li>
+            <!-- <li class="hideOnMobile"><a href="#">Login</a></li> -->
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+
+
+    <!-- destinations -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./Img/jotiba temple/img1.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./Img/jotiba temple/img2.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./Img/jotiba temple/img3.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+    <!-- content -->
+
+    <section class="containt">
+        <h3>Information of Jotiba Temple</h3>
+        <p>
+            Jyotiba is a holy shrine located at an altitude of 3124 feet above sea level in the Panhala hill ranges in
+            Kolhapur district and is an important religious destination for the Hindus.The deity of this temple is
+            Jyotiba and is believed to be an incarnation of three gods Brahma, Vishnu, Shiva.
+
+            A beautifully built temple, the interiors have an ancient look with many wall cravings spreading different
+            kind of good messages to society.The temple is big and houses many sculptures and historic monuments.Within
+            the complex there are other temples and light - towers. </p>
+        <br>
+        <p>
+            After defeating the dreaded demon Kolhasur and other devils, the goddess of wealth decided to settle in
+            Kolhapur.In order to enhance the defense of her empire, she appointed four guards on the four sides of
+            Kolhapur.The most important gaurd was Jyotiba, Mahalaxmi appointed Jyotiba at the northern side.Since then
+            Jyotiba is also known as 'Kedareshwar' or 'Dakkahancha Raja'. <br>
+
+            According to history, NavjiSaya originally built the temple.In the year 1730, Ranoji Scindia rebuilt the
+            temple which is its present form.The second temple of Kedareshwar was constructed by Daulatrao Sindhia in
+            1808. The third temple of Ramling including its dome was constructed in 1780 by Malji Nilam Panhalkar.
+            <br> <br>
+        <p>Fair in Jyotiba : <br>
+            Every year on Chaitra Poornima i.e. on the occasion of “Ekadashi” a gala fair is held and thousands of
+            devotees from all over India gather on Jyotiba hill.Devotees celebrate their joy of visiting their god by
+            dancing with the huge sticks known as 'Sasankathi' and scattering huge amount of ‘Gulal’, making the whole
+            mountain is turn pink.The joy and enthusiasm generated is hard to describe, but at least once in your
+            lifetime you must experience this fair.
+            <br>
+            <br>
+            Best time to visit : <br>
+            Jyotiba is a great place to visit during the winter or rainy season to enjoy the scenic beauty of this
+            place.In case you want to skip the crowds at the temple, a visit during the afternoon is the best.Otherwise
+            devotees can visit during Chaitra Poornima i.e “Ekadashi” when a grand fair is held.
+         <br>
+        <br>
+        How to reach : <br>
+        Jyotiba is about 17 km north - west of Kolhapur. MSRTC buses ply regularly between Kolhapur city and Jyotiba from the main bus depot. Private taxis can also be hired from important junctions of Kolhapur city.
+    <br>
+<br>
+Where to stay : <br>
+A trip to the Jyotiba temple will not take you more than 2 hours, so you can easily travel to and fro from Kolhapur within the same day. In case you are visiting the temple during the Chaitra Poornima (Jyotiba fair) and want to spend a of couple days at the holy place, MTDC Jyotiba resort is situated near the Jyotiba temple. There are many hotels and resorts in and around Jyotiba. In fact while reaching Jyotiba you will find many resorts and budget hotels on the way, they can be contacted as per to your budget and duration of your stay.
+ <br>
+<br>
+Where to eat : <br>
+There is a langar (free food) organized within the temple premises during the annual fair.The food here is served free to all the devotees who visit the temple. The meal includes freshly cooked Indian meals  which are served to devotees round the clock during the festival. There are a couple of fast food centers and restaurants around Jyotiba temple offering regular Indian fare along snack items like vada pav, misal pav, tea etc.But it is strongly recommended to carry your own food and plenty of water.</p>
+        <br>
+        <br>
+        </p>
+    </section>
+
+
+    <!-- timing for visiting -->
+    <div class="container">
+        <div class="info-box">
+            <div class="icon">⏰</div>
+            <h2>Timing</h2>
+            <p>5.30 Am To 9 PM</p>
+        </div>
+
+        <div class="info-box">
+            <div class="icon">💰</div>
+            <h2>Entry Fees</h2>
+            <p>Free</p>
+        </div>
+
+        <div class="info-box">
+            <div class="icon">🏠</div>
+            <h2>Address</h2>
+            <p>Jyotiba Dongar, Kolhapur, Maharashtra 416001</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- maps -->
+
+    <section class="map">
+        <h3>How To Reach</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.634339014921!2d74.17144267674274!3d16.794858378360807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1acdb85d7ab6f%3A0xfb3cf546e1e17572!2sShree%20Jyotiba%20Devasthan%20Kolhapur!5e0!3m2!1sen!2sin!4v1714558225878!5m2!1sen!2sin"
+            width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+    <!-- Nearby palces to visit -->
+    <div class="Nearby">
+        <div class="nearby-box">
+            <!-- <div class="icon"></div> -->
+            <h2>Nearby Places To Visit</h2>
+            <p>
+                <a href="https://maps.app.goo.gl/1HkEWSEBQxRH2F878">1)Jotiba hill view point</a><br>
+                <a href="https://maps.app.goo.gl/6R5ZNxFP43QubGfz9">2)Shri Yamai Mandir</a><br>
+                <a href="https://maps.app.goo.gl/vCdP3kpxDweg29dq5">3)Gaimukh Temple</a><br>
+
+            </p>
+        </div>
+
+        <div class="nearby-box">
+            <!-- <div class="icon">💰</div> -->
+            <h2>Nearby Hotels and Resturants</h2>
+            <p>
+                <a
+                    href="https://maps.app.goo.gl/PrdFwgsGGTdtedYh7">1)New Shravani Hotel Yatri Nivas</a><br>
+                <a
+                    href="https://maps.app.goo.gl/wUbh1KRNTcNBLQtH8">2)MTDC Resort Jyotiba Royale</a><br>
+                <a
+                    href="https://maps.app.goo.gl/BRLVuwrbM74k2sF88">3)Hotel Dwarka</a><br>
+
+            </p>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- footer section starts here  -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="./About.html">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Booking Guide</a></li>
+                        <li><a href="#">Cancellation policy</a></li>
+                        <li><a href="#">Site map</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends here  -->
+
+</body>
+
+</html>

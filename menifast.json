@@ -1,0 +1,13 @@
+{
+    "name": "Ninad",
+    "short_name": "sahyadri treks",
+    "start_url": "/index.html",
+    "display": "sahyadri treks",
+    "icons": [
+      {
+        "src": "/public/Img/logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }

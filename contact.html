@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="./contact1.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <!-- <li><a href="#">Login</a></li> -->
+        </ul>
+        <ul>
+            <li><a href="#">
+                    <h2 class="">EXPLORE_KOLHAPUR </h2>
+                </a></li>
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./About.html">About</a></li>
+            <li class="hideOnMobile"><a href="./contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="./Services.html">Services</a></li>
+            <!-- <li class="hideOnMobile"><a href="#">Login</a></li> -->
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+
+    <!-- form starts here -->
+    <div class="maindiv">
+        <div id="buffer-ani"  style="display: none;justify-content: center;align-items: center;width: 100vw;height: 100vh;background: rgba(0, 0, 0, 0.7);position: absolute;z-index: 99;">
+            <iframe src="https://lottie.host/embed/d9df6020-5c45-4b91-9250-d951cfa1323f/fpEaCCiyEc.json"  style="width: 300px; height: 400px;border: none;"></iframe>
+        </div>
+        <div class="container">
+            <form name="submit-to-google-sheet" class="glass-login-form">
+                <h2>Contact Us</h2>
+                <div class="input-group">
+                    <label for="">Name : </label>
+                    <input type="text" name="name" required id=""><br>
+                </div>
+                <div class="input-group">
+                    <label for="">Email : </label>
+                    <input type="email" name="email" required><br>
+                </div>
+                <div class="input-group">
+                    <label for="">Gender : </label>
+                </div>
+                <input type="radio" name="gender" value="Male"><label for="">Male</label>
+                <input type="radio" name="gender" value="Female"><label for="">Female</label><br>
+                <input type="text" name="date" id="date" style="display: none;">
+                <div class="input-group">
+                    <label for="">Message : </label>
+                    <textarea name="message" id="" cols="20" required></textarea><br>
+                </div>
+                <input type="submit" name="submit" class="button" id="submitBtn"><br>
+                <span id="success"></span>
+            </form>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzPp6KedvcI5--JB1YNfBIQrlOC1Xzm3GyPXtd2-qxXq-3DayrnmLsdtLqZaCi-zlIt/exec'
+                const success = document.getElementById('success');
+                const form = document.forms['submit-to-google-sheet']
+                const submitBtn = document.getElementById('submitBtn');
+                const buffer_ani = document.getElementById('buffer-ani');
+                const date = document.getElementById('date');
+                
+                const d = new Date();
+                date.value = `${d.getDate()}-${d.getMonth()}-${d.getFullYear()}`
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    submitBtn.disabled = true;
+                    buffer_ani.style.display = 'flex';
+                    console.log("Button")
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            success.innerHTML = "data successfully submit";
+                            submitBtn.disabled = false;
+                            buffer_ani.style.display = 'none';
+
+                            setTimeout(function () {
+                                success.innerHTML = "";
+                            }, 5000)
+                            form.reset();
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- footer section starts here  -->
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="./About.html">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Booking Guide</a></li>
+                        <li><a href="#">Cancellation policy</a></li>
+                        <li><a href="#">Site map</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends here  -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    /* background: url('./Img/background1.jpg.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30%; */
+    /* background-image: url(./Img/bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+
+    /* background-color: aliceblue; */
+    /* background-image: linear-gradient(to bottom right,pink, #f3a7ff, #bcefff); */
+    background-color: rgb(105, 5, 5);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+    /* background-image: linear-gradient(to bottom right, #f1b0fb, #8aefff); */
+    background-color: rgb(74, 19, 19);
+
+    text-decoration: underline;
+    transition: background-color 1s ease;
+    transition: text-decoration 1s ease;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(100, 28, 28);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  }
+  
+  @media(max-width: 400px) {
+    .sidebar {
+      width: 50%;
+      height: 40%;
+    }
+  }
+  
+::-webkit-scrollbar{
+    display: none;
+  }
+
+
+
+/* nav css ends here */
+
+/* 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ffffff, #e0e0e0);
+   background-image: url(./Img/bgimg.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.maindiv{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ffffff, #e0e0e0);
+   background-image: url(./Img/bgimg.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    width: 75%;
+    max-width: 400px;
+}
+ 
+.glass-login-form {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+}
+ 
+.glass-login-form h2 {
+    text-align: center;
+    color: #000000;
+}
+ 
+.input-group {
+    margin: 20px;
+}
+ 
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0e0d0d;
+}
+ 
+::placeholder {
+    color: #0c0c0c;
+}
+ 
+.input-group input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(245, 240, 240, 0.15);
+    backdrop-filter: blur(11px);
+    color: #f7efef;
+}
+ 
+.input-group textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(245, 240, 240, 0.15);
+    backdrop-filter: blur(11px);
+    color: #f7efef;
+}
+.input-group textarea:focus {
+    outline: none;
+    background: rgba(176, 155, 253, 0.3);
+}
+.input-group input:focus {
+    outline: none;
+    background: rgba(176, 155, 253, 0.3);
+}
+ 
+.button {
+    margin: 10px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #e992f7, #3b3494);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+ 
+.button:hover {
+    background: linear-gradient(45deg, #057bf8, #de9cff);
+}
+
+
+
+
+
+/* footer section starts here  */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container1{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+    /* margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;*/
+    border-radius: 10px; 
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 80px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+/* footer section ends here */

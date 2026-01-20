@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankala</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="./rankala.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <!-- <li><a href="#">Login</a></li> -->
+        </ul>
+        <ul>
+            <li><a href="#">
+                    <h2 class="">EXPLORE_KOLHAPUR</h2>
+                </a></li>
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./About.html">About</a></li>
+            <li class="hideOnMobile"><a href="./contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="./Services.html">Services</a></li>
+            <!-- <li class="hideOnMobile"><a href="#">Login</a></li> -->
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+
+
+    <!-- destinations -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://miro.medium.com/v2/resize:fit:1013/1*DeeNQYV5IZZd3y9N2STlMg.png" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./Img/rankala/img3.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./Img/rankala/img1.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+    <!-- content -->
+
+    <section class="containt">
+        <h3>Information of Rankala</h3>
+       <p>
+        Rankala Lake is a significant landmark and a popular tourist attraction located in Kolhapur, Maharashtra, India. Here's a detailed overview of Rankala Lake:
+<br><br>
+Location: <br> Rankala Lake is situated in the heart of Kolhapur city, near the Mahalaxmi Temple. It is easily accessible and well-connected by road, making it a convenient destination for both locals and tourists.
+<br><br> Historical Significance: <br> The lake holds historical and cultural significance in the region. It is believed to have been built during the reign of King Shilahar in the 12th century. Over the centuries, it has served as a source of water for irrigation and a recreational area for the people of Kolhapur.
+<br><br>Size and Surroundings: Rankala Lake covers an area of approximately 3.5 square kilometers, making it one of the largest lakes in Maharashtra. The lake is surrounded by lush greenery, parks, and promenades, offering a picturesque setting for visitors to relax and unwind.
+<br><br>Boating and Water Sports: <br> One of the main attractions of Rankala Lake is boating. Visitors can enjoy pedal boat rides or rowboat rides on the tranquil waters of the lake while soaking in the scenic views of the surroundings. Additionally, the lake is a popular spot for water sports activities such as jet skiing and motor boating.
+<br><br>Religious Significance: <br> Rankala Lake holds religious significance for the locals. It is believed to be associated with Hindu mythology, and a small temple dedicated to Rankabhairav, a form of Lord Shiva, is located near the lake. Devotees often visit the temple to offer prayers and seek blessings. <br>
+<br><br>Recreational Activities: <br> Apart from boating, Rankala Lake offers various recreational activities for visitors. The lakefront promenade is an ideal place for leisurely strolls and picnics. Several food stalls and eateries along the lake offer delicious local snacks and refreshments. <br>
+<br><br>Evening Attractions: <br> In the evenings, Rankala Lake comes alive with vibrant colors and lively atmosphere. The illuminated surroundings and cool breeze make it a popular spot for locals and tourists to spend quality time with family and friends.
+Overall, Rankala Lake is not only a scenic destination but also a cultural and recreational hub in Kolhapur. Its serene ambiance, historical significance, and array of activities make it a must-visit attraction for anyone exploring the city.
+       </p>
+    </section>
+
+
+    <!-- timing for visiting -->
+    <div class="container">
+        <div class="info-box">
+            <div class="icon">⏰</div>
+            <h2>Timing</h2>
+            <p>9:00 AM to 9:00 PM</p>
+        </div>
+
+        <div class="info-box">
+            <div class="icon">💰</div>
+            <h2>Entry Fees</h2>
+            <p>Free</p>
+        </div>
+
+        <div class="info-box">
+            <div class="icon">🏠</div>
+            <h2>Address</h2>
+            <p>Kolhapur-Gaganbavda Road, Kolhapur-Radhanagari Rd, C Ward, Kolhapur, Maharashtra 416012</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- maps -->
+
+    <section class="map">
+        <h3>How To Reach</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7643.526239070516!2d74.20565658975542!3d16.688733113300714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1aaa5d3909f97%3A0x12874bdca6a9d134!2sRankala%20Lake!5e0!3m2!1sen!2sin!4v1714563636169!5m2!1sen!2sin"
+            width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+    <!-- Nearby palces to visit -->
+    <div class="Nearby">
+        <div class="nearby-box">
+            <!-- <div class="icon"></div> -->
+            <h2>Nearby Places To Visit</h2>
+            <p>
+                <a href="https://maps.app.goo.gl/2DhujqcDjvP8BquLA">1)ISKCON Kolhapur </a><br>
+                <a href="https://maps.app.goo.gl/4AnL5uYDzBVYHBNQ8">2)Shalini Palace</a><br>
+                <a href="https://maps.app.goo.gl/NnzQghkRnKKkQyTTA">3)Vasant Vishwas Park</a><br>
+
+            </p>
+        </div>
+
+        <div class="nearby-box">
+            <!-- <div class="icon">💰</div> -->
+            <h2>Nearby Hotels and Resturants</h2>
+            <p>
+                <a href="https://maps.app.goo.gl/p2apaAiUUaADNoN6A">1)Hotel Blooming Soul</a><br>
+                <a href="https://maps.app.goo.gl/gEXnjwN22Xoq3qu69">2)RK Kitchen Kolhapur</a><br>
+                <a href="https://maps.app.goo.gl/aXuDRvfWW9i7gEFx5">3)Hotel Classic Mid Town </a><br>
+
+            </p>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- footer section starts here  -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="./About.html">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Booking Guide</a></li>
+                        <li><a href="#">Cancellation policy</a></li>
+                        <li><a href="#">Site map</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends here  -->
+
+</body>
+
+</html>

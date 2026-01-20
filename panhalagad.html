@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panhalagad Fort</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="./panhalagad.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <!-- <li><a href="#">Login</a></li> -->
+        </ul>
+        <ul>
+            <li><a href="#">
+                    <h2 class="">EXPLORE_KOLHAPUR</h2>
+                </a></li>
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./About.html">About</a></li>
+            <li class="hideOnMobile"><a href="./contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="./Services.html">Services</a></li>
+            <!-- <li class="hideOnMobile"><a href="#">Login</a></li> -->
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+
+
+    <!-- destinations -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./Img/panhalagad/img1.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./Img/panhalagad/img4.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./Img/panhalagad/img3.jpg" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+    <!-- content -->
+
+    <section class="containt">
+        <h3>Information of Panhalagad Fort</h3>
+        <p>
+            The Kolhapur District of Maharashtra is half a mile towards the east of Panhala fort from which it is separated by a ravine. The chief defense of the fort is a scarped rock fifteen to twenty-five feet high. In most places the steepness of the rock has been increased by artificial scarping and it has been strengthened by a parapet wall of Kolhapur black stone fourteen feet high.
+
+In 1827, under Shahoji I (1821-1837), Pavangad and its neighboring fort Panhala were given over to the British Raj. In 1844, during the minority of Shivaji IV (1837–1860), Panhala and Pavangad were taken by rebels who seized Colonel Ovans, the Resident of Satara, when he was on tour and imprisoned him in Panhala. A British force under General Delamotte was sent against the rebels and on 1 December 1844 breached Panhala fort walls, took it by storm. Shortly thereafter in 1844, the two main entrances of Pawangad were pulled down and the fort was dismantled. The fort though deserted has a good water supply.
+        </p>
+        <br>
+        <p> Panhala Fort, also known as Panhalgad and Panhalla (literally "the home of serpents"), is located in Panhala, 20 kilometers northwest of Kolhapur in Maharashtra, India. Let me share some fascinating details about this historic fort:
+            <br> <br>
+            1. Strategic Location: <br>
+               - Panhala Fort strategically overlooks a pass in the Sahyadri mountain range. This pass served as a major trade route from Bijapur (in the interior of Maharashtra) to the coastal areas.
+            <br><br>
+            2. Historical Significance: <br>
+               - Built between **1178 and 1209 CE**, Panhala Fort was one of **15 forts** constructed by the **Shilahara ruler Bhoja II**.
+               - The aphorism **"Kahaan Raja Bhoj, kahan Gangu Teli"** is associated with this fort.
+               - Over time, it passed through the hands of various rulers, including the Yadavas, Bahamanis of Bidar, and the Adil Shahi dynasty of Bijapur.
+            <br> <br>
+            3. **Notable Features**: <br>
+               - The fort sprawls over **7 kilometers** in perimeter and boasts **watchtowers**, **bastions**, and **ramparts**.
+               - It is the only fort where **Chhatrapati Shivaji Maharaj** is believed to have spent more than **500 days**.
+               - The fort's zigzag shape has earned it the nickname **"Fort of Snakes"**¹[1].
+            <br> <br>
+            4. **Construction and Expansion**: <br>
+               - **Bhoja II** initiated the fort's construction, and it was later expanded during the reign of **Ibrahim Adil Shah I**.
+               - The strong ramparts and gateways were built by the **Adil Shahi dynasty**, which took approximately **a hundred years** to complete.
+               - Numerous inscriptions within the fort refer to the reign of **Ibrahim Adil Shah**¹[1].
+            <br> <br>
+            5. **Battle of Pavan Khind**: <br>
+               - Panhala Fort witnessed several skirmishes involving the **Marathas**, **Mughals**, and the **British East India Company**.
+               - The most notable battle was the **Battle of Pavan Khind**.
+               - **Tarabai Ranisaheb**, the queen regent of Kolhapur, spent her formative years here¹[1].
+            <br> <br>
+            6. **Current State**: <br>
+               - Many parts of the fort and its structures remain intact, making it a fascinating historical site.
+            <br> <br>
+            **Panhala Fort** stands as a testament to Maharashtra's rich heritage and offers breathtaking views of the surrounding landscape. If you ever get a chance, do explore this remarkable piece of history! 🏰🌟
+            
+</p>
+    </section>
+
+
+    <!-- timing for visiting -->
+    <div class="container">
+        <div class="info-box">
+            <div class="icon">⏰</div>
+            <h2>Timing</h2>
+            <p>6 Am To 7 PM</p>
+        </div>
+
+        <div class="info-box">
+            <div class="icon">💰</div>
+            <h2>Entry Fees</h2>
+            <p>Free</p>
+        </div>
+
+        <div class="info-box">
+            <div class="icon">🏠</div>
+            <h2>Address</h2>
+            <p>Panhala, Kolhapur</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- maps -->
+
+    <section class="map">
+        <h3>How To Reach</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15277.31532107237!2d74.09658584165757!3d16.810035384621816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1af2403b02a2d%3A0x261688a64b188fc1!2sPanhala%20Fort%2C%20Panhala%2C%20Maharashtra%20416201!5e0!3m2!1sen!2sin!4v1714555404004!5m2!1sen!2sin"
+            width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+   <!-- Nearby palces to visit -->
+<div class="Nearby">
+    <div class="nearby-box">
+        <!-- <div class="icon"></div> -->
+        <h2>Nearby Places To Visit</h2>
+        <p>
+            <a href="https://maps.app.goo.gl/rQyDASoJ4YGRsaek7">1)Sunrise point Panhala</a><br>
+            <a href="https://maps.app.goo.gl/DMgU1mzP9PXx5icA6">2)Pusati Buruj</a><br>
+            <a href="https://maps.app.goo.gl/27gvmESTsbK2nBfV7">3)Tabak Udyan</a><br>
+           
+        </p>
+    </div>
+
+    <div class="nearby-box">
+        <!-- <div class="icon">💰</div> -->
+        <h2>Nearby Hotels and Resturants</h2>
+        <p>
+            <a href="https://www.google.com/travel/search?ts=CAESCAoCCAMKAggDGhwSGhIUCgcI6A8QBRgCEgcI6A8QBRgDGAEyAhAAKgoKCAoBCDoDSU5S&qs=CAEyE0Nnb0lwZVBQNWJQSm50OGJFQUU4CkIJCUCfRdpSYv7LQgkJpfGzPEt6vhtCCQmvrqmXAjl5mFpfMl2qAVoQASoKIgZob3RlbHMoADIfEAEiG-PyLMmDwi4Q29bagU6QZrTpTALGOov9r6SEMDIpEAIiJWhvdGVscyBhbmQgcmVzdGF1cmFudHMgcGFuaGFsZ2FkIGZvcnQ&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls">1)Magadh Resort</a><br>
+            <a href="https://www.google.com/travel/search?ts=CAESCAoCCAMKAggDGhwSGhIUCgcI6A8QBRgCEgcI6A8QBRgDGAEyAhAAKgoKCAoBCDoDSU5S&qs=CAEyFENnc0l3TDZXMHEzS21QX0xBUkFCOApCCQlAn0XaUmL-y0IJCaXxszxLer4bQgkJr66plwI5eZhaXzJdqgFaEAEqCiIGaG90ZWxzKAAyHxABIhvj8izJg8IuENvW2oFOkGa06UwCxjqL_a-khDAyKRACIiVob3RlbHMgYW5kIHJlc3RhdXJhbnRzIHBhbmhhbGdhZCBmb3J0&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls">2)Heritage Residency</a><br>
+            <a href="https://www.google.com/travel/search?ts=CAESCAoCCAMKAggDGh4SHBIUCgcI6A8QBRgCEgcI6A8QBRgDGAEyBAgAEAAqCgoICgEIOgNJTlI&qs=CAEyJ0Noa0lodVRPME1HajVmdFRHZzB2Wnk4eE1XTTNNMlJ6Y1Y5bkVBRTgKQgkJQJ9F2lJi_stCCQml8bM8S3q-G0IJCa-uqZcCOXmYWl8yXaoBWhABKgoiBmhvdGVscygAMh8QASIb4_IsyYPCLhDb1tqBTpBmtOlMAsY6i_2vpIQwMikQAiIlaG90ZWxzIGFuZCByZXN0YXVyYW50cyBwYW5oYWxnYWQgZm9ydA&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls">3)Hotel saptarang residency panhala</a><br>
+           
+        </p>
+    </div>
+
+    
+</div>
+
+
+
+    <!-- footer section starts here  -->
+   
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                  <ul>
+                      <li><a href="./About.html">About us</a></li>
+                      <li><a href="#">Our services</a></li>
+                      <li><a href="#">Privacy policy</a></li>
+                      <li><a href="#">Affiliate program</a></li>
+                  </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Booking Guide</a></li>
+                    <li><a href="#">Cancellation policy</a></li>
+                    <li><a href="#">Site map</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                  <ul>
+                      <li><a href="#">Newsletter</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#">Offers</a></li>
+                  </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- footer section ends here  -->
+
+</body>
+
+</html>
